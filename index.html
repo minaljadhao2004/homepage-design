@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Premium Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">LUXE</div>
+                    
+                    <nav class="desktop-nav">
+                        <a href="#" class="nav-link">All Clothing</a>
+                        <a href="#" class="nav-link">Men</a>
+                        <a href="#" class="nav-link">Women</a>
+                        <a href="#" class="nav-link">Gifting</a>
+                        <a href="#" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </nav>
+                    
+                    <div class="header-icons">
+                        <button class="icon-btn search-toggle">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <button class="icon-btn cart-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </button>
+                        <button class="mobile-menu-toggle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for T-Shirts, Jackets, Jeans...">
+                    <button type="submit">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <nav>
+                <a href="#" class="mobile-nav-link">All Clothing</a>
+                <a href="#" class="mobile-nav-link">Men</a>
+                <a href="#" class="mobile-nav-link">Women</a>
+                <a href="#" class="mobile-nav-link">Gifting</a>
+                <a href="#" class="mobile-nav-link">About Us</a>
+                <a href="#" class="mobile-nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Step into Style - Premium Fashion Awaits</p>
+                    <h1 class="hero-title">Because You Deserve to Feel Timeless.</h1>
+                    <p class="hero-description">Each piece is thoughtfully designed to celebrate your individuality - blending modern elegance with lasting craftsmanship.</p>
+                    <button class="cta-btn">
+                        Explore the Collection →
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Fashion Model" class="fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Timeless Design</h3>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🪶</div>
+                    <h3>Lightweight Comfort</h3>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Premium Quality</h3>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✂️</div>
+                    <h3>Modern Minimal</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">Explore Our Timeless Bestseller</h2>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="tshirts">T-Shirts</button>
+                <button class="category-tab" data-category="jackets">Jackets</button>
+                <button class="category-tab" data-category="jeans">Jeans</button>
+                <button class="category-tab" data-category="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" data-category="tshirts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80" alt="Classic White Tee">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CLASSIC WHITE TEE</h3>
+                        <div class="product-price">
+                            <span class="price-current">₹799</span>
+                            <span class="price-original">₹999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jackets">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80" alt="Denim Jacket">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">VINTAGE DENIM JACKET</h3>
+                        <div class="product-price">
+                            <span class="price-current">₹2,499</span>
+                            <span class="price-original">₹3,999</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="jeans">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&q=80" alt="Slim Fit Jeans">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">SLIM FIT DARK JEANS</h3>
+                        <div class="product-price">
+                            <span class="price-current">₹1,799</span>
+                            <span class="price-original">₹2,499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tshirts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&q=80" alt="Black Polo">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">PREMIUM BLACK POLO</h3>
+                        <div class="product-price">
+                            <span class="price-current">₹999</span>
+                            <span class="price-original">₹1,499</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <button class="cta-btn-secondary">Shop Bestsellers →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+        <div class="container">
+            <h2 class="section-title">Recently Viewed</h2>
+            <div class="products-carousel">
+                <button class="carousel-btn prev">‹</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="product-card-small">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=300&q=80" alt="Product">
+                            <h4>CASUAL SHIRT</h4>
+                            <p class="price">₹1,299 <span>₹1,899</span></p>
+                        </div>
+                        <div class="product-card-small">
+                            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=300&q=80" alt="Product">
+                            <h4>LEATHER JACKET</h4>
+                            <p class="price">₹3,999 <span>₹5,999</span></p>
+                        </div>
+                        <div class="product-card-small">
+                            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=300&q=80" alt="Product">
+                            <h4>STRIPED SWEATER</h4>
+                            <p class="price">₹1,599 <span>₹2,199</span></p>
+                        </div>
+                        <div class="product-card-small">
+                            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=300&q=80" alt="Product">
+                            <h4>CARGO PANTS</h4>
+                            <p class="price">₹1,999 <span>₹2,999</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Notes Banner -->
+    <section class="gift-banner">
+        <div class="container">
+            <div class="gift-content">
+                <h2>Make It Extra Special with Personalised Gift Notes</h2>
+                <div class="gift-images">
+                    <div class="gift-card"></div>
+                    <div class="gift-card"></div>
+                    <div class="gift-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Banner -->
+    <section class="seasonal-banners">
+        <div class="container">
+            <div class="banner-grid">
+                <div class="seasonal-card large">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Winter Collection">
+                    <div class="seasonal-overlay">
+                        <h2>Winter Love Has Arrived..</h2>
+                        <a href="#" class="banner-link">Explore New Arrivals →</a>
+                    </div>
+                </div>
+                <div class="seasonal-grid-small">
+                    <div class="seasonal-card small">
+                        <div class="seasonal-content">
+                            <h3>Shop Under ₹1000</h3>
+                            <a href="#" class="banner-link-small">Shop →</a>
+                        </div>
+                    </div>
+                    <div class="seasonal-card small">
+                        <div class="seasonal-content">
+                            <h3>Shop Under ₹2000</h3>
+                            <a href="#" class="banner-link-small">Shop →</a>
+                        </div>
+                    </div>
+                    <div class="seasonal-card small">
+                        <div class="seasonal-content">
+                            <h3>Shop Under ₹3000</h3>
+                            <a href="#" class="banner-link-small">Shop →</a>
+                        </div>
+                    </div>
+                    <div class="seasonal-card small">
+                        <div class="seasonal-content">
+                            <h3>E-Gift Cards</h3>
+                            <a href="#" class="banner-link-small">Shop →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Grid -->
+    <section class="collection-section">
+        <div class="container">
+            <h2 class="section-title">Explore Our Collection</h2>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80" alt="T-Shirts">
+                    <h3>T-Shirts</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80" alt="Jackets">
+                    <h3>Jackets</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80" alt="Jeans">
+                    <h3>Jeans</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80" alt="Hoodies">
+                    <h3>Hoodies</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=400&q=80" alt="Shirts">
+                    <h3>Shirts</h3>
+                </div>
+                <div class="collection-item">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section class="gifts-section">
+        <div class="container">
+            <h2 class="section-title">Gifts That Celebrate Every Moment</h2>
+            <p class="section-subtitle">Perfect pieces for every special occasion in their life.</p>
+            <div class="gifts-grid">
+                <div class="gift-card-large">
+                    <div class="gift-icon">🎂</div>
+                    <h3>BIRTHDAY</h3>
+                    <p>Celebrate their special day with a timeless piece that shines as bright as they do.</p>
+                    <a href="#" class="gift-link">Shop Birthday Gifts →</a>
+                </div>
+                <div class="gift-card-large">
+                    <div class="gift-icon">💝</div>
+                    <h3>ANNIVERSARY</h3>
+                    <p>Mark your love story with fashion that symbolizes everlasting connection and devotion.</p>
+                    <a href="#" class="gift-link">Shop Anniversary Gifts →</a>
+                </div>
+                <div class="gift-card-large">
+                    <div class="gift-icon">💍</div>
+                    <h3>ENGAGEMENT</h3>
+                    <p>Begin forever with a piece that captures the promise of your beautiful journey ahead.</p>
+                    <a href="#" class="gift-link">Shop Engagement Gifts →</a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <button class="cta-btn-secondary">Explore More Collection →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethos Section -->
+    <section class="ethos-section">
+        <div class="container">
+            <div class="ethos-grid">
+                <div class="ethos-content">
+                    <p class="ethos-label">OUR ETHOS</p>
+                    <h2>Every Style. Every Statement.</h2>
+                    <p>Every piece we create is a blend of artistry and awareness handcrafted with precision, guided by purpose.</p>
+                    <p>From ethically sourced materials to sustainable processes, we believe true beauty shines brightest when it's made responsibly.</p>
+                    <a href="#" class="text-link">Know More →</a>
+                </div>
+                <div class="ethos-image">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Sustainable Fashion">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainable Banner -->
+    <section class="sustainable-section">
+        <div class="container">
+            <h2 class="section-title">Not Just A Trend. It's The Future.</h2>
+            <p class="section-subtitle">Our sustainable clothing is crafted with the same quality and style as traditional fashion without the compromise.</p>
+            
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-icon">🌿</div>
+                    <p>Organic Cotton</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">💎</div>
+                    <p>Premium Quality</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">♻️</div>
+                    <p>Ethical Sourcing</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">✓</div>
+                    <p>Quality Certified</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">✂️</div>
+                    <p>Customisable Designs</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">↩️</div>
+                    <p>Free 15 Days Return & Exchange</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Voices of Our Happy Customers</h2>
+            <p class="section-subtitle">Every piece we create carries a story but nothing shines brighter than the words of those who wear them.</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>"So pretty!"</h4>
+                    <p>I recently ordered the 'Classic White Tee' from LUXE, and I'm absolutely in love! The craftsmanship is stunning, and the quality is just perfect.</p>
+                    <p class="reviewer">- Sarah Johnson</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>"Amazing quality!"</h4>
+                    <p>The denim jacket exceeded my expectations. The fit is perfect and the material feels premium. Will definitely order again!</p>
+                    <p class="reviewer">- Michael Chen</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>"Love the style!"</h4>
+                    <p>Best online shopping experience! The clothes fit perfectly and the quality is outstanding. Highly recommend LUXE!</p>
+                    <p class="reviewer">- Emma Wilson</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>"Fantastic service!"</h4>
+                    <p>From ordering to delivery, everything was seamless. The clothes are exactly as shown and the quality is exceptional.</p>
+                    <p class="reviewer">- David Brown</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <button class="cta-btn-secondary">Read More Reviews →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-logo">LUXE</h3>
+                    <p>LUXE is a premium brand specializing in exquisite clothing and accessories.</p>
+                    <p>Known for its timeless elegance and fine craftsmanship, LUXE offers a curated collection of traditional and contemporary designs perfect for every occasion.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>OUR COLLECTION</h4>
+                    <ul>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Jackets</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>POLICIES</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">FAQ's Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#">All Clothing</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Gifting</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 / LUXE</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
